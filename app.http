@@ -1,0 +1,24 @@
+GET http://localhost:6000/todos/
+###
+GET http://localhost:6000/todos/?category=LEARNING
+###
+GET http://localhost:6000/todos/2/
+###
+GET http://localhost:6000/agenda/?date=2021-04-04
+###
+POST http://localhost:6000/todos/
+Content-Type: application/json 
+
+{
+ "id": 6,
+ "todo": "Finalize event theme",
+ "priority": "LOW",
+ "status": "DONE",
+ "category": "HOME",
+ "dueDate": "2021-02-22"
+}
+###
+PUT http://localhost:6000/todos/1/
+###
+
+DELETE http://localhost:6000/todos/1/
